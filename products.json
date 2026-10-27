@@ -1,0 +1,32 @@
+[
+  {
+    "id": "P001",
+    "name": "Laptop",
+    "description": "8GB RAM, 256GB SSD",
+    "price": 750000
+  },
+  {
+    "id": "P002",
+    "name": "Wireless Mouse",
+    "description": "Rechargeable wireless mouse",
+    "price": 15000
+  },
+  {
+    "id": "P003",
+    "name": "Keyboard",
+    "description": "USB mechanical keyboard",
+    "price": 35000
+  },
+  {
+    "id": "P004",
+    "name": "Headphones",
+    "description": "Wireless headphones with a microphone",
+    "price": 45000
+  },
+  {
+    "id": "P005",
+    "name": "Monitor",
+    "description": "24-inch Full HD monitor",
+    "price": 180000
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "input": "What is the price of P002?",
+    "expected": "Answer says 15,000 RWF",
+    "answer": "The price of P002 (Wireless Mouse) is 15,000 RWF.",
+    "retrieval_context": [
+      "P002: Wireless Mouse costs 15,000 RWF"
+    ],
+    "latency_s": 3.14,
+    "metrics": [
+      {
+        "metric": "AnswerRelevancy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the actual output contains no irrelevant statements and fully addresses the input question about the price of P002. Keep up the great work!"
+      },
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because no contradictions were found, meaning every claim in the actual output is fully supported by the retrieval context. Great work keeping the response faithful to the source material!"
+      }
+    ]
+  },
+  {
+    "input": "Find the laptop",
+    "expected": "Answer lists the Laptop (P001)",
+    "answer": "I found one laptop in the catalogue:\n\n- **P001 – Laptop**: 8GB RAM, 256GB SSD, priced at 750,000 RWF",
+    "retrieval_context": [
+      "P001 | Laptop | 8GB RAM, 256GB SSD | 750,000 RWF"
+    ],
+    "latency_s": 2.31,
+    "metrics": [
+      {
+        "metric": "AnswerRelevancy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the actual output contains no irrelevant statements and fully addresses the input 'Find the laptop', so there were no deductions to explain."
+      },
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because no contradictions were found, meaning every claim in the actual output is fully supported by the retrieval context. Great work keeping the response faithful to its sources!"
+      }
+    ]
+  },
+  {
+    "input": "What is the price of P999?",
+    "expected": "Answer says the product does not exist and gives no price",
+    "answer": "Product P999 does not exist in the catalogue, so I can't give you a price for it. If you have a product name or a different product ID, I can check that for you.",
+    "retrieval_context": [
+      "Product 'P999' not found in the catalogue."
+    ],
+    "latency_s": 2.34,
+    "metrics": [
+      {
+        "metric": "AnswerRelevancy",
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no irrelevant statements in the actual output, meaning every part of the response directly addresses the question about the price of P999. Since nothing is off-topic, the score cannot be improved further. Great job staying focused on exactly what was asked!"
+      },
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because no contradictions were found, meaning every claim in the actual output is fully supported by the retrieval context. Great job staying faithful to the source material!"
+      }
+    ]
+  }
+]
