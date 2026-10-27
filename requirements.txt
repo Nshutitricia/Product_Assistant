@@ -1,0 +1,4 @@
+anthropic==1.6.0
+python-dotenv==1.2.2
+deepeval==4.3.2
+pytest==9.1.1
